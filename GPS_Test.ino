@@ -3,6 +3,12 @@
   Display data from the GPS to the TFT display
   Left side Grove connector shares pins with I2C1 of 40 pin connector.
   Do not use the default wire (I2C) library as these pins are now a UART.
+
+  Requires the Seeed_Ardunio_LCD library provided with the WioTerminal board definitions
+  https://wiki.seeedstudio.com/Seeed_Arduino_Boards/
+
+  Requires the TinyGPS++ library by Mikal Hart
+  http://arduiniana.org/libraries/tinygpsplus/
 */
 
 #include <wiring_private.h>
