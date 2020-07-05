@@ -1,0 +1,5 @@
+{
+    "sketch": "GPS_Test.ino",
+    "board": "Seeeduino:samd:seeed_wio_terminal",
+    "configuration": "cache=on,speed=120,opt=small,maxqspi=50,usbstack=arduino,debug=off"
+}

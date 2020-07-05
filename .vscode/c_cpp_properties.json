@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Arduino SAMD",
+            "includePath": [
+                "C:\\Users\\charl\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\tools\\**",
+                "C:\\Users\\charl\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.6\\variants\\wio_terminal",
+                "C:\\Users\\charl\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.6\\**",
+                "C:\\Users\\charl\\OneDrive\\Documents\\Arduino\\libraries\\**"
+
+            ],
+            "compilerPath": "C:\\Users\\charl\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\bin\\arm-none-eabi-g++.exe",
+            "forcedInclude": [
+                "C:\\Users\\charl\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.6\\cores\\arduino\\Arduino.h"
+            ],
+            "defines": [
+                "F_CPU=120000000L",
+                "ARDUINO=10813",
+                "ARDUINO_WIO_TERMINAL",
+                "ARDUINO_ARCH_SAMD",
+                "__SAMD51P19A__",
+                "WIO_TERMINAL",
+                "SEEED_WIO_TERMINAL",
+                "SEEED_GROVE_UI_WIRELESS",
+                "__SAMD51__",
+                "USBCON"
+            ],
+      
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
