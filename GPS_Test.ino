@@ -86,9 +86,9 @@ void loop()
     // Print Date and Time
     if (gps.date.isValid() && gps.time.isValid())
     {
-      sprintf(valueToPrint, "%d/%d/%d", gps.date.month(), gps.date.day(), gps.date.year());
+      sprintf(valueToPrint, "%02d/%02d/%02d", gps.date.month(), gps.date.day(), gps.date.year());
       textToPrint = valueToPrint;
-      sprintf(valueToPrint, "%d:%d:%d", gps.time.hour(), gps.time.minute(), gps.time.second());
+      sprintf(valueToPrint, "%02d:%02d:%02d", gps.time.hour(), gps.time.minute(), gps.time.second());
       textToPrint = textToPrint + " " + valueToPrint + " GMT";
       printLine(textToPrint, 0);
     }
