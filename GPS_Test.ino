@@ -100,7 +100,7 @@ void loop()
     // Print LAT 
     if (gps.location.isValid())
     {
-      textToPrint  = "LAT= ";
+      textToPrint  = "Last LAT= ";
       sprintf(valueToPrint, "%0.6f", gps.location.lat());
       printLine(textToPrint + valueToPrint, 1);
     }
@@ -113,7 +113,7 @@ void loop()
     // Print LONG
     if (gps.location.isValid())
     {
-      textToPrint = "LONG= ";
+      textToPrint = "Last LONG= ";
       sprintf(valueToPrint, "%0.6f", gps.location.lng());
       printLine(textToPrint + valueToPrint, 2);
     }
@@ -126,7 +126,7 @@ void loop()
      // Print Altitude
     if (gps.altitude.isValid())
     {
-      textToPrint = "Altitude= ";
+      textToPrint = "Last Altitude= ";
       sprintf(valueToPrint, "%0.0f", gps.altitude.feet());
       printLine(textToPrint + valueToPrint + " feet", 3);
     }
@@ -183,6 +183,12 @@ void loop()
     {
       printLine("Satellites= NO DATA", 5);
     }
+
+    textToPrint = "Age= ";
+    sprintf(valueToPrint, "%d", gps.location.age());
+    printLine(textToPrint + valueToPrint, 6);
+
+
     
     PrintStats();
   }
